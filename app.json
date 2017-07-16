@@ -1,0 +1,13 @@
+{
+  "name": "Pet Amigo Server",
+  "description": "Servidor e Web App para Pet Amigo",
+  "keywords": [
+    "Pet Amigo",
+    "server",
+    "web app"
+  ],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/freeality/pet-amigo-server",
+  "website": "http://github.com/freeality/pet-amigo-server",
+  "repository": "http://github.com/freeality/pet-amigo-server"
+}
