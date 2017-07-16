@@ -1,14 +1,13 @@
 {
-  "name": "Start on Heroku: Go",
-  "description": "Go Getting Started Example App",
+  "name": "Pet Amigo Server",
+  "description": "Servidor e Web App para Pet Amigo",
   "keywords": [
-    "getting-started",
+    "Pet Amigo",
     "go",
-    "sample",
-    "example"
+    "server"
   ],
   "image": "heroku/go:1.6",
-  "mount_dir": "src/github.com/heroku/go-getting-started",
-  "website": "http://github.com/heroku/go-getting-started",
-  "repository": "http://github.com/heroku/go-getting-started"
+  "mount_dir": "src/github.com/freeality/pet-amigo-server",
+  "website": "http://github.com/freeality/pet-amigo-server",
+  "repository": "http://github.com/freeality/pet-amigo-server"
 }
