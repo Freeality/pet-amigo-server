@@ -9,15 +9,6 @@
 			"revisionTime": "2017-01-09T09:34:21Z"
 		},
 		{
-			"checksumSHA1": "cpELhz30Sco7IBwvI6FyuShnjnQ=",
-			"comment": "v1.0rc1-110-g4cc2de6",
-			"path": "github.com/gin-gonic/gin",
-			"revision": "d459835d2b077e44f7c9b453505ee29881d5d12d",
-			"revisionTime": "2017-07-02T09:28:26Z",
-			"version": "v1.2",
-			"versionExact": "v1.2"
-		},
-		{
 			"checksumSHA1": "M8Z61f8GZs6CO23wP+ekRgZEo+w=",
 			"comment": "v1.0rc1-110-g4cc2de6",
 			"path": "github.com/gin-gonic/gin/binding",
