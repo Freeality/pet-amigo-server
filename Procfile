@@ -1,1 +1,1 @@
-web: pet-amigo-server
+web: go-getting-started
