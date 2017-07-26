@@ -1,3 +1,6 @@
 <h1>Home Page</h1>
+{{if .Username }}
+    <p>Olá, {{ .Username }}!</p>
+{{ end }}
 <a href="/login">Login</a>
 <a href="/signup">Sign Up</a>

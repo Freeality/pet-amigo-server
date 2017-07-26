@@ -1,10 +1,6 @@
 <html>
   {{template "header.tmpl.html"}}
 <body>
-  {{if .Nome }} 
-    <p>{{ .Nome }}</p>
-  {{ end }}
-  {{template "nav.tmpl.html"}}
-
+  {{template "nav.tmpl.html" .}}
 </body>
 </html>

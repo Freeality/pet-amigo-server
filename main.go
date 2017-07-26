@@ -7,9 +7,14 @@ import (
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
+	"github.com/freeality/pet-amigo-server/controllers"
 )
 
 func main() {
+	iniciarServidor()
+}
+
+func iniciarServidor() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
@@ -21,9 +26,19 @@ func main() {
 	router.LoadHTMLGlob("templates/*.tmpl.html")
 	router.Static("/static", "static")
 
-	router.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.tmpl.html", gin.H {"Nome": "Usuário"} )
-	})
+	defineRotas(router)
 
 	router.Run(":" + port)
+}
+
+func defineRotas(r *gin.Engine) {
+	usuarioController := controllers.GetUsuarioController()
+
+	r.GET("/", home)
+	r.GET("/login", usuarioController.NewLogin)
+	r.POST("/validateLogin", usuarioController.ValidateLogin)
+}
+
+func home(c *gin.Context) {
+	c.HTML(http.StatusOK, "index.tmpl.html", gin.H {} )
 }
