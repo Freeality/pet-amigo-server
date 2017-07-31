@@ -1,11 +1,18 @@
 <html>
     {{template "header.tmpl.html"}}
     <body>
-        <h1>Login Page</h1>
-        <form method="POST" action="/validateLogin">
-            <input type="text" name="username" placeholder="username">
-            <input type="password" name="password" placeholder="password">
-            <input type="submit" value="Login">
-        </form>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Login Page</h1>
+                <form method="POST" action="/validateLogin" id="loginForm">
+                    <input type="text" name="username" placeholder="username">
+                    <input type="password" name="password" placeholder="password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        <div class="alert-danger">
+            <p id="mensagem_erro"></p>
+        </div>
     </body>
 </html>
