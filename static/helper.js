@@ -13,11 +13,9 @@ function validateLogin(event) {
 
     var posting = $.post( url, $form.serialize());
     posting.done(function(data){
-        console.log(data);
         document.write(data);
     });
     posting.fail(function(data) {
-        console.log(data)
        $("#mensagem_erro").text(data.responseText);
     });
 }
