@@ -81,6 +81,12 @@
 			"comment": "v5.9.1",
 			"path": "gopkg.in/bluesuncorp/validator.v5",
 			"revision": "d627af88ac021317a280d320986282a6dc97549a"
+		},
+		{
+			"checksumSHA1": "zT5/chpzg81CzaMM5LrChA/cUzE=",
+			"path": "gopkg.in/validator.v2",
+			"revision": "07ffaad256c8e957050ad83d6472eb97d785013d",
+			"revisionTime": "2017-05-09T20:39:04Z"
 		}
 	],
 	"rootPath": "github.com/freeality/pet-amigo-server"

@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 	"github.com/freeality/pet-amigo-server/controllers"
+	"github.com/freeality/pet-amigo-server/db"
 )
 
 func main() {
@@ -27,8 +28,15 @@ func iniciarServidor() {
 	router.Static("/static", "static")
 
 	defineRotas(router)
+	iniciarDb()
 
 	router.Run(":" + port)
+}
+
+// iniciarDb cria as tabelas durante o desenvolvimento
+// as tabelas serão recriadas.
+func iniciarDb() {
+	db.Migrate()
 }
 
 func defineRotas(r *gin.Engine) {
